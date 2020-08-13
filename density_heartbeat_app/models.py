@@ -12,9 +12,12 @@ class Sensor(models.Model):
     isalive = models.CharField(max_length=250)
     check_in = models.CharField(max_length=250)
 
+    def __str__(self):
+        return self.name
+
 
 # Heartbeat model fields
     # beats- foreignkey
 class Heartbeat(models.Model):
-    rhythm = models.ForeignKey(Sensor, on_delete=models.CASCADE, related_name='heartbeat')
+    sensor = models.ForeignKey(Sensor, on_delete=models.CASCADE, related_name='heartbeat')
 
