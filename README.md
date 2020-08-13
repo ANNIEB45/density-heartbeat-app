@@ -16,3 +16,6 @@
 * 9.Created superuser for admin
 * 10.ran python server (_works_)
 * 11.Checked admin route, logged in (_works_)
+* 12.Started configuring URL for density_heartbeat_app and index(main page)
+* 14.Created Serializer(_added feed data_),Views, routes
+* 15.
