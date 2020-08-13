@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # add density app and rest_framework, don't have django_extension yet
     'rest_framework',
-    'django_extensions',
-    'managem_app'
+    # 'django_extensions',
+    'density_heartbeat_app'
 ]
 
 MIDDLEWARE = [
