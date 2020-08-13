@@ -18,5 +18,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('density_heartbeat_app.urls'))
+    path('api/v1/', include('density_heartbeat_app.urls')),
+    re_path(r'^.*$', views.FrontendAppView.as_view()),
+    
 ]

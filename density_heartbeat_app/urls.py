@@ -4,9 +4,10 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
+
 # first parameter is url, second is data importing
-# router.register('artist', views.ArtistView)
-# router.register('song', views.SongView)
+router.register('sensor', views.SensorView)
+router.register('heartbeat', views.HeartbeatView)
 
 urlpatterns = [
     path('', include(router.urls))

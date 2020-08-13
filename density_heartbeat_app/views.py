@@ -1,3 +1,19 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import Sensor, Heartbeat
+from .serializers import SensorSerializer, HeartbeatSerializer
+
+class SensorView(viewsets.ModelViewSet):
+    queryset = Sensor.objects.all()
+    serializer_class = SensorSerializer
+
+class HeartbeatView(viewsets.ModelViewSet):
+    queryset = Heartbeat.objects.all()
+    serializer_class = HeartbeatSerializer
+
+
+# Will uncomment after creating feedserialiazer
+
+# class FeedView(viewsets.ModelViewSet):
+#     queryset =
+#     serializer_class = FeedSerializer
