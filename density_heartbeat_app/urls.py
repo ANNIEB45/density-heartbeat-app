@@ -8,6 +8,7 @@ router = routers.DefaultRouter()
 # first parameter is url, second is data importing
 router.register('sensor', views.SensorView)
 router.register('heartbeat', views.HeartbeatView)
+router.register('feed', views.FeedView)
 
 urlpatterns = [
     path('', include(router.urls))

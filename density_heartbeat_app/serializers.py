@@ -23,4 +23,4 @@ class FeedSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Sensor
-        fields = ('name', 'location', 'isalive' 'heartbeats')
+        fields = ('name', 'location', 'is_alive', 'heartbeats')
