@@ -18,9 +18,9 @@ class SensorSerializer(serializers.ModelSerializer):
 
 # Will add feed data for front-end(homepage)
 
-# class FeedSerializer(serializers.ModelSerializer):
-#     heartbeats = HeartbeatSerializer(many=True, read_only=True)
-#     sensor = SensorSerializer(many=True, read_only=True)
+class FeedSerializer(serializers.ModelSerializer):
+    heartbeats = HeartbeatSerializer(many=True, read_only=True)
 
-#     class Meta:
-#         model
+    class Meta:
+        model = Sensor
+        fields = ('name', 'location', 'isalive' 'heartbeats')

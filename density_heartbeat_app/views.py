@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 
 from .models import Sensor, Heartbeat
-from .serializers import SensorSerializer, HeartbeatSerializer
+from .serializers import SensorSerializer, HeartbeatSerializer, FeedSerializer
 
 class SensorView(viewsets.ModelViewSet):
     queryset = Sensor.objects.all()
@@ -12,8 +12,6 @@ class HeartbeatView(viewsets.ModelViewSet):
     serializer_class = HeartbeatSerializer
 
 
-# Will uncomment after creating feedserialiazer
-
-# class FeedView(viewsets.ModelViewSet):
-#     queryset =
-#     serializer_class = FeedSerializer
+class FeedView(viewsets.ModelViewSet):
+    queryset = Sensor.objects.all()
+    serializer_class = FeedSerializer

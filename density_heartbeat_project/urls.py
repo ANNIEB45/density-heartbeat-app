@@ -19,7 +19,9 @@ from django.contrib import admin
 # bug-File "/Users/annebellefleur/density_assignment/density_heartbeat_project/urls.py", line 19, in <module>
 #     from . import views
 # ImportError: cannot import name 'views' from 'density_heartbeat_project' (/Users/annebellefleur/density_assignment/density_heartbeat_project/__init__.py)
+
     # can't figure out proplem
+    # FIXED IT...THANK GOD... ADDED VIEWS FILE TO PROJECT FOLDER... 
 from . import views
 
 urlpatterns = [

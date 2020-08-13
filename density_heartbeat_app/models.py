@@ -9,7 +9,7 @@ from django.db import models
 class Sensor(models.Model):
     name = models.CharField(max_length=250)
     location = models.CharField(max_length=250) 
-    isalive = models.CharField(max_length=250)
+    is_alive = models.CharField(max_length=250)
     check_in = models.CharField(max_length=250)
 
     def __str__(self):
