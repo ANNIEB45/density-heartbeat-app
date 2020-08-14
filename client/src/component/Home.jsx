@@ -17,7 +17,7 @@ export default class Home extends Component {
             newState.sensors = res.data
             // console.log(res.data)
             this.setState(newState)
-            console.log('are we getting data')
+            // console.log('are we getting data')
         } catch (err) {
             console.log('Error getting all sensors')
             console.log(err)
@@ -28,10 +28,11 @@ export default class Home extends Component {
 // data not rendering on page??? 
     // getting status 404 error
 
+    // fixed error-needed to add proxy to localhost:8000 in package.json. axios was looking for data in localhost:3000 
+
     
     render() {
         return (
-            // console.log(this.state.sensors)
             <div>
                 <h1>Home Page</h1>
                 { this.state.sensors.map((sensor) => {
