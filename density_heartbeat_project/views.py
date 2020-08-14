@@ -1,3 +1,5 @@
+# needed to import views into url file
+
 import logging
 import os
 
