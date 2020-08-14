@@ -46,4 +46,8 @@
 * _Also need to add live streaming functionality-probably with kafka_
 
 ### Limitations of solution:
-* 
+* _cannot view heartbeats_
+* _no way to count beats per sensor_
+* _no live data_
+* _cannot view individual sensor heartbeat data_
+* _cannot view whether sensor is alive and check in_
