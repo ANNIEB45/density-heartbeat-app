@@ -38,4 +38,12 @@
 * 29.data is now rendering on page(_and the crowd goes wild_)
 ## FRONT END WORKS
 
-#### _biggest focus was on backend, ran into the most bugs_
+### What did I focus on:
+ * _Biggest focus was on backend. I knew that once I had the initial setup everything else would not be as complicated. It's also where I ran into the most bugs_
+
+### Where I left off:
+* _I haven't finished the front-end. Also need to add algorithm for hearbeat-count for each heartbeat_
+* _Also need to add live streaming functionality-probably with kafka_
+
+### Limitations of solution:
+* 
